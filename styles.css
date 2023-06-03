@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, #FFD700, #FFA500);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timer-section,
+  .stopwatch-section,
+  .countdown-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: slide-in 1s ease-out;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .timer,
+  .stopwatch,
+  .countdown {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .timer span,
+  .stopwatch span,
+  .countdown span {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  
+  input {
+    width: 50px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  @keyframes countdown-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .countdown-input {
+    margin-bottom: 10px;
+    animation: countdown-fade 1s ease-out;
+  }
+
+.countdown-section {
+    margin: 0 20px;
+  }
+  
+  .countdown-input {
+    margin-bottom: 10px;
+  }
+  
+  .countdown-input input {
+    width: 50px;
+    margin-right: 5px;
+  }
+    
